@@ -12,12 +12,52 @@ $pop: #c1121f;
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: $primary;
-  margin-bottom: 4rem;
   overflow-x: hidden;
 }
 
 header {
   height: 80vh;
+}
+
+footer {
+  margin-top: 10rem;
+  color: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  hr {
+    width: 80%;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    p {
+      padding: 1em;
+      font-size: 1.2rem;
+    }
+
+    a {
+      font-size: 2rem;
+      color: $secondary;
+    }
+
+    .fa-linkedin:hover {
+      color: blue;
+    }
+
+    .fa-github:hover {
+      color: green;
+    }
+
+    .fa-instagram:hover {
+      color: orange;
+    }
+  }
 }
 
 .nav-bar {
@@ -84,6 +124,12 @@ header {
   align-items: center;
   padding: 5em;
 
+  .line {
+    display: block;
+    width: 30%;
+    color: $secondary;
+  }
+
   h1 {
     font-size: 5rem;
     margin-top: 15vh;
@@ -107,12 +153,6 @@ header {
     background-color: $pop;
     color: $primary;
   }
-}
-
-.line {
-  display: block;
-  width: 30%;
-  color: $secondary;
 }
 
 .skills-section {
