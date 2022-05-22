@@ -7,7 +7,7 @@
 /* VARIABLES */
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #fdf0d5;
+  background-color: #efefef;
   overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ header {
 
 footer {
   margin-top: 10rem;
-  color: #003049;
+  color: #a9a9a9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@ footer .icons p {
 }
 footer .icons a {
   font-size: 2rem;
-  color: #003049;
+  color: #a9a9a9;
 }
 footer .icons .fa-linkedin:hover {
   color: blue;
@@ -50,7 +50,7 @@ footer .icons .fa-instagram:hover {
 }
 
 .nav-bar {
-  background-color: #003049;
+  background-color: #a9a9a9;
   padding: 3em;
   display: flex;
   align-items: center;
@@ -58,8 +58,12 @@ footer .icons .fa-instagram:hover {
   position: fixed;
   width: 100vw;
 }
+.nav-bar .open-menu,
+.nav-bar .close-menu,
+.nav-bar h4 {
+  color: black;
+}
 .nav-bar .open-menu {
-  color: #fdf0d5;
   font-size: 3rem;
   display: none;
 }
@@ -68,14 +72,12 @@ footer .icons .fa-instagram:hover {
 }
 .nav-bar .close-menu {
   display: none;
-  color: #fdf0d5;
   font-size: 3rem;
 }
 .nav-bar .close-menu:hover {
   cursor: pointer;
 }
 .nav-bar h4 {
-  color: #fdf0d5;
   position: relative;
   z-index: 200;
 }
@@ -86,52 +88,54 @@ footer .icons .fa-instagram:hover {
 }
 
 .btn {
-  color: #fdf0d5;
+  color: black;
   text-decoration: none;
-  border: 2px solid #fdf0d5;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 0.5rem 1rem;
   transition: background-color 200ms ease-in, color 200ms ease-in;
 }
 
 .btn:hover {
-  background-color: #fdf0d5;
-  color: #003049;
+  background-color: black;
+  color: #a9a9a9;
 }
 
 .hero {
-  background-color: #fdf0d5;
+  background-color: #efefef;
   display: flex;
   gap: 3rem;
   flex-direction: column;
   align-items: center;
   padding: 5em;
 }
+.hero br {
+  display: none;
+}
 .hero .line {
   display: block;
   width: 30%;
-  color: #003049;
+  color: #a9a9a9;
 }
 .hero h1 {
   font-size: 5rem;
   margin-top: 15vh;
   text-transform: uppercase;
-  color: #003049;
+  color: #ff3b3f;
   letter-spacing: 3px;
-  text-shadow: 2px 2px 4px;
   text-align: center;
 }
 .hero .btn {
-  border: 4px solid #c1121f;
-  color: #c1121f;
+  border: 4px solid #a9a9a9;
+  color: #a9a9a9;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: 700;
-  box-shadow: 10px 10px 3px 1px #c1121f;
+  box-shadow: 10px 10px 3px 1px #a9a9a9;
 }
 .hero .btn:hover {
-  background-color: #c1121f;
-  color: #fdf0d5;
+  background-color: #a9a9a9;
+  color: #efefef;
 }
 
 .skills-section {
@@ -142,7 +146,7 @@ footer .icons .fa-instagram:hover {
 }
 
 .card {
-  background-color: #003049;
+  background-color: #a9a9a9;
   border-radius: 10px;
   padding: 3em;
   box-shadow: 0 6px 5px black;
@@ -152,11 +156,11 @@ footer .icons .fa-instagram:hover {
 }
 
 main {
-  color: #003049;
+  color: #ff3b3f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 main h2 {
   text-transform: uppercase;
@@ -184,7 +188,7 @@ main h2 {
     top: 0;
     right: 0;
     font-size: 3rem;
-    background-color: #003049;
+    background-color: #a9a9a9;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -218,6 +222,11 @@ main h2 {
   }
 
   .hero .btn {
-    box-shadow: 5px 5px 3px 1px #c1121f;
+    box-shadow: 5px 5px 3px 1px #a9a9a9;
+  }
+}
+@media (max-width: 1000px) {
+  .hero br {
+    display: block;
   }
 }/*# sourceMappingURL=index.css.map */
