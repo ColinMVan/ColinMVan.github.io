@@ -51,29 +51,10 @@ header {
   cursor: pointer;
 }
 
-.nav-bar .og-header {
+.nav-bar h4 {
   color: var(--primary);
   position: relative;
   z-index: 200;
-}
-
-.nav-bar h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0%;
-  height: 3px;
-  background-color: var(--primary);
-  bottom: -5px;
-  transition: width 300ms ease-in-out;
-}
-
-.nav-bar h4:hover::after {
-  width: 100%;
-}
-
-.nav-bar h4:hover {
-  cursor: default;
 }
 
 .btn {
@@ -178,10 +159,7 @@ main {
 
   .nav-bar h4 {
     font-size: 1.5rem;
-  }
-
-  .nav-bar h4::after {
-    height: 2px;
+    padding: 10px;
   }
 
   .nav-bar .links {
@@ -216,7 +194,7 @@ main {
     display: none;
     z-index: 200;
     position: absolute;
-    top: 30px;
+    top: 35px;
     right: 30px;
   }
   .card img {
