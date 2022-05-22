@@ -14,6 +14,9 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: $primary;
   overflow-x: hidden;
+  background-image: url("images/cool-background.png");
+  background-size: cover;
+  background-position: bottom right;
 }
 
 header {
@@ -121,7 +124,6 @@ footer {
 }
 
 .hero {
-  background-color: $primary;
   display: flex;
   gap: 3rem;
   flex-direction: column;
