@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 80vh;
 }
 
 .nav-bar {
@@ -31,9 +31,30 @@ header {
   width: 100vw;
 }
 
-.nav-bar h4 {
+.nav-bar .open-menu {
+  color: var(--primary);
+  font-size: 3rem;
+  display: none;
+}
+
+.nav-bar .open-menu:hover {
+  cursor: pointer;
+}
+
+.nav-bar .close-menu {
+  display: none;
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.nav-bar .close-menu:hover {
+  cursor: pointer;
+}
+
+.nav-bar .og-header {
   color: var(--primary);
   position: relative;
+  z-index: 200;
 }
 
 .nav-bar h4::after {
@@ -77,7 +98,6 @@ header {
 
 .hero {
   background-color: var(--primary);
-  height: 100%;
   display: flex;
   gap: 3rem;
   flex-direction: column;
@@ -143,29 +163,67 @@ main {
 }
 
 .card img {
-  max-width: 15rem;
+  max-width: 10rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   html {
     font-size: 10px;
   }
 
-  .skills-section {
-    flex-direction: column;
-  }
-
   .nav-bar {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3rem;
   }
 
-  .nav-bar ul {
-    display: none;
+  .nav-bar h4 {
+    font-size: 1.5rem;
   }
 
+  .nav-bar h4::after {
+    height: 2px;
+  }
+
+  .nav-bar .links {
+    transition: left 300ms ease-in;
+    display: none;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    background-color: var(--secondary);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    gap: 5rem;
+    z-index: 100;
+  }
+
+  .links .btn {
+    font-size: 2.5rem;
+    border: none;
+    padding: 1.5em 0;
+    width: 100vw;
+    display: block;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .nav-bar .close-menu {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
   .card img {
     width: 12rem;
+  }
+
+  .nav-bar .open-menu {
+    display: block;
   }
 }
