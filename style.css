@@ -164,4 +164,8 @@
     .nav-bar ul {
       display: none;
     }
+
+    .card img {
+        width: 12rem;
+    }
   }
