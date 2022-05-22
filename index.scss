@@ -168,6 +168,11 @@ footer {
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
+
+  i {
+    color: $darker;
+    font-size: 10rem;
+  }
 }
 
 .card {

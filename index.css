@@ -144,6 +144,10 @@ footer .icons .fa-instagram:hover {
   gap: 5rem;
   flex-wrap: wrap;
 }
+.skills-section i {
+  color: black;
+  font-size: 10rem;
+}
 
 .card {
   background-color: #a9a9a9;
