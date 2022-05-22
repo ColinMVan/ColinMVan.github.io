@@ -184,4 +184,8 @@ main h2 {
   .card img {
     width: 12rem;
   }
+
+  .hero .btn {
+    box-shadow: 5px 5px 3px 1px #c1121f;
+  }
 }/*# sourceMappingURL=index.css.map */
