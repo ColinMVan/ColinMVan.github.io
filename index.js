@@ -14,3 +14,26 @@ closeMenu.addEventListener("click", () => {
   closeMenu.style.display = "none";
   openMenu.style.display = "block";
 });
+
+const navBar = document.querySelector(".nav-bar");
+const sectionOne = document.querySelector(".hero");
+
+const sectionOneOptions = {
+  rootMargin: "-400px 0px 0px 0px",
+};
+
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navBar.classList.add("nav-scrolled");
+    } else {
+      navBar.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
