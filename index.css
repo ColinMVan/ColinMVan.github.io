@@ -183,7 +183,7 @@ main .about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20rem;
+  padding-top: 20rem;
 }
 main .about-me hr {
   width: 85%;
