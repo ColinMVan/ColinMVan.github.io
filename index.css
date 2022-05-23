@@ -91,7 +91,6 @@ footer .icons .fa-instagram:hover {
 }
 
 .nav-scrolled {
-  transition: background-color 200ms ease-in;
   background-color: white;
 }
 
