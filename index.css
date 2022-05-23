@@ -126,25 +126,25 @@ footer .icons .fa-instagram:hover {
   font-size: 5rem;
   margin-top: 15vh;
   text-transform: uppercase;
-  color: #ff3b3f;
+  color: #1073e5;
   letter-spacing: 3px;
   text-align: center;
 }
 .hero .btn {
-  border: 4px solid #a9a9a9;
-  color: #a9a9a9;
+  border: 4px solid black;
+  color: black;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: 700;
-  box-shadow: 10px 10px 3px 1px #a9a9a9;
+  box-shadow: 10px 10px 3px 1px black;
 }
 .hero .btn:hover {
-  background-color: #a9a9a9;
+  background-color: black;
   color: white;
 }
 
 main {
-  color: #ff3b3f;
+  color: #1073e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +193,7 @@ main .about-me hr {
 main .about-me h1 {
   font-size: 4rem;
   padding: 1em;
-  color: #ff3b3f;
+  color: #1073e5;
 }
 main .about-me p {
   padding: 2em;
@@ -256,7 +256,7 @@ main .about-me p {
   }
 
   .hero .btn {
-    box-shadow: 5px 5px 3px 1px #a9a9a9;
+    box-shadow: 5px 5px 3px 1px black;
   }
 
   main .about-me p {
