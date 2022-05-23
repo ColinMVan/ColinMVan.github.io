@@ -5,14 +5,14 @@
 }
 
 /* VARIABLES */
-$primary: #efefef;
+$primary: white;
 $secondary: #a9a9a9;
 $pop: #ff3b3f;
 $darker: black;
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: white;
+  background-color: $primary;
   overflow-x: hidden;
   background-image: url("images/cool-background.png");
   background-size: cover;
@@ -111,7 +111,7 @@ footer {
 
 .nav-scrolled {
   // transition: background-color 100ms ease-in;
-  background-color: white;
+  background-color: $primary;
 }
 
 .btn {
@@ -232,7 +232,7 @@ main {
       top: 0;
       right: 0;
       font-size: 3rem;
-      background-color: white;
+      background-color: $primary;
       flex-direction: column;
       align-items: center;
       width: 100%;
