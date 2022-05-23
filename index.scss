@@ -301,6 +301,10 @@ main {
       box-shadow: 5px 5px 3px 1px $secondary;
     }
   }
+
+  main .about-me p {
+    width: 50ch;
+  }
 }
 
 @media (max-width: 1000px) {
