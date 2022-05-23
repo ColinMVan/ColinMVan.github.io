@@ -1,3 +1,4 @@
+// Makes the hamburger responsive
 const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 const links = document.querySelector(".links");
@@ -15,6 +16,7 @@ closeMenu.addEventListener("click", () => {
   openMenu.style.display = "block";
 });
 
+// Changes the nav bar background color when scrolling
 const navBar = document.querySelector(".nav-bar");
 const sectionOne = document.querySelector(".hero");
 
