@@ -129,6 +129,24 @@ footer .icons .fa-instagram:hover {
   color: #1073e5;
   letter-spacing: 3px;
   text-align: center;
+  -webkit-animation: headerAnimation 2000ms forwards;
+          animation: headerAnimation 2000ms forwards;
+}
+@-webkit-keyframes headerAnimation {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes headerAnimation {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .hero .btn {
   border: 4px solid black;
