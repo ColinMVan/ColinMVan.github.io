@@ -173,6 +173,10 @@ main .skills-section .card {
   align-items: center;
   box-shadow: 0 6px 5px black;
   width: 16rem;
+  transition: transform 300ms ease-in, scale 300ms ease-in;
+}
+main .skills-section .card:hover {
+  transform: translateY(-1rem) scale(1.1);
 }
 main .skills-section .card img {
   max-width: 10rem;
