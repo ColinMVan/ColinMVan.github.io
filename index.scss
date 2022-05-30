@@ -152,16 +152,6 @@ footer {
     color: $pop;
     letter-spacing: 3px;
     text-align: center;
-    animation: headerAnimation 2000ms forwards;
-  }
-
-  @keyframes headerAnimation {
-    from {
-      transform: scale(0.1);
-    }
-    to {
-      transform: scale(1);
-    }
   }
 
   .btn {
