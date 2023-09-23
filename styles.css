@@ -61,9 +61,37 @@ body {
   width: 80%;
   margin: 0 auto;
   margin-top: 10rem;
+  display: flex;
 }
 
 .hero .name {
   font-size: 72px;
   font-weight: 700;
+}
+
+.about {
+  background-color: var(--white);
+  height: 80vh;
+  width: 100vw;
+  margin-top: 50vh;
+}
+
+.about .title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--coral);
+}
+
+/* .rightSide {
+  margin: 0 auto;
+  color: var(--leather);
+  text-transform: uppercase;
+} */
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  z-index: -1;
 }
