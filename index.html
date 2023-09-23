@@ -2,84 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://kit.fontawesome.com/73232d6f01.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Colin Van Hoveln</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="nav-bar">
-        <h4>&lt Frontend Developer &gt</h4>
-        <i class="fa-solid fa-bars open-menu"></i>
-        <ul class="links">
-          <li><a href="#" class="btn">Portfolio</a></li>
-          <li><a href="#about-me" class="btn" id="aboutLink">About</a></li>
-          <li><a href="#" class="btn">Contact</a></li>
-        </ul>
-        <i class="fa-solid fa-xmark close-menu"></i>
-      </nav>
-      <div class="hero">
-        <h1>Colin <br />Van Hoveln</h1>
-        <hr class="line" />
-        <a href="#" class="btn">View Resume</a>
+    <div class="nav">
+      <div class="subtitle">&lt web dev &gt</div>
+      <div class="links">
+        <a href="#" id="colored">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
       </div>
-    </header>
-    <main>
-      <h2>Skills</h2>
-      <div class="skills-section">
-        <div class="card skill1">
-          <img src="images/htmlLogo.png" alt="" />
-        </div>
-        <div class="card skill2">
-          <img src="images/css3-logo.png" alt="" />
-        </div>
-        <div class="card skill3">
-          <img src="images/javascript-logo.png" alt="" />
-        </div>
-        <div class="card">
-          <i class="fa-brands fa-git-alt"></i>
-        </div>
-      </div>
-      <div class="about-me" id="about-me">
-        <hr />
-        <h1>&lt About Me &gt</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet iusto
-          dolore iste est cupiditate eos molestias nisi ipsum nemo mollitia.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet iusto
-          dolore iste est cupiditate eos molestias nisi ipsum nemo mollitia.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet iusto
-          dolore iste est cupiditate eos molestias nisi ipsum nemo mollitia.
-        </p>
-        <hr />
-      </div>
-    </main>
-    <footer>
-      <hr />
-      <div class="icons">
-        <p>Colin Van Hoveln Production</p>
-        <a
-          href="https://www.linkedin.com/in/colin-van-hoveln-03a784206"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/ColinMVan" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.instagram.com" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-      </div>
-    </footer>
-    <script src="index.js"></script>
+    </div>
+    <div class="hero">
+      <div class="name">Colin <span id="colored">Van Hoveln</span></div>
+    </div>
   </body>
 </html>
